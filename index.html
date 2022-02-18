@@ -1,0 +1,45 @@
+<!-- this is a redirect file...  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome :)</title>
+
+    <link rel="stylesheet" href="./assets/css/loadscreen.css">
+
+</head>
+<body onload="redirect()">
+
+ <div class="content">
+    <div class="loading">
+ <p>loading</p>
+       <span></span>
+    </div>
+ </div>
+
+
+
+ <script>
+
+    //using timeout to test the load screen for now
+
+let body = document.querySelector('body')
+
+redirect = () => {
+
+    setTimeout(() => {
+            window.location.assign("./index-1.html")
+        }, 2000);
+
+}
+
+ </script>
+
+
+    
+</body>
+</html>
